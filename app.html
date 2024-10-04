@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Corriente en Serie</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cálculo de Corriente en Serie</h1>
+        <form id="resistanceForm">
+            <label for="voltage">Voltaje (V):</label>
+            <input type="number" id="voltage" required>
+
+            <div id="resistancesContainer">
+                <label for="resistance1">Resistencia 1 (Ω):</label>
+                <input type="number" class="resistanceInput" id="resistance1" required>
+            </div>
+
+            <button type="button" onclick="addResistance()">Agregar Resistencia</button>
+            <button type="button" onclick="calculateCurrent()">Calcular Corriente</button>
+        </form>
+
+        <div id="result">
+            <h2>Resultado:</h2>
+            <p id="currentOutput">La corriente es: - A</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
